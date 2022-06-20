@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  height: 1.5;
+  padding: 20px;
+  background-color: black;
+}
+.container {
+  max-width: 720px;
+  min-height: 512px;
+  margin: auto;
+  margin-top: 70px;
+  padding: 10px;
+  display: grid;   
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: 2fr 1fr 1fr;
+  gap: 20px;
+  
+}
+a{
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: larger;
+}
+
+.item {
+  padding: 20px;
+  border: black;
+}
+
+.item1 {
+  grid-column: span 6;
+  background-color: orangered;
+}
+.item2 {
+  grid-column: span 3;
+  background-color: orange;
+}
+
+.item3 {
+  grid-column: span 4;
+  grid-row: span 2;
+  background-color: green;
+}
+
+.item4,
+.item5 {
+  grid-column: span 5;
+  background-color: skyblue;
+}
